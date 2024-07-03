@@ -13,13 +13,13 @@ const options = {
 const centralTime = new Date().toLocaleString('en-US', options).replace(/,/g, '');
 
 const Info = (log) => {
-    console.log(`${centralTime}|INFO: ${log}`);
+    console.log(`${new Date().toLocaleString('en-US', options).replace(/,/g, '')}|INFO: ${log}`);
 }
 const Debug = (log) => {
-    console.log(`${centralTime}|DEBUG: ${log}`);
+    console.log(`${new Date().toLocaleString('en-US', options).replace(/,/g, '')}|DEBUG: ${log}`);
 }
 const Error = (log) => {
-    console.log(`${centralTime}|ERROR: ${log}`);
+    console.log(`${new Date().toLocaleString('en-US', options).replace(/,/g, '')}|ERROR: ${log}`);
 }
 
 module.exports = { Info, Debug, Error }
